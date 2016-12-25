@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -45,7 +45,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X2-Zu-MJq"/>
-                                    <segue destination="fBp-G5-rjT" kind="show" id="BgO-vb-dsV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,16 +63,17 @@
                         <outlet property="recordButton" destination="iJS-9P-IIA" id="lBV-Ns-34p"/>
                         <outlet property="recordingLabel" destination="7lM-6O-bMd" id="rW4-Ab-kSU"/>
                         <outlet property="stopRecordingButton" destination="nUJ-b4-zKp" id="hRV-JK-pdf"/>
+                        <segue destination="fBp-G5-rjT" kind="show" identifier="stopRecording" id="0fb-J3-xkF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056.8" y="121.88905547226388"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="OVt-yB-a3x">
             <objects>
-                <viewController id="fBp-G5-rjT" sceneMemberID="viewController">
+                <viewController id="fBp-G5-rjT" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wdw-Js-XnK"/>
                         <viewControllerLayoutGuide type="bottom" id="ZHP-aJ-FAT"/>
